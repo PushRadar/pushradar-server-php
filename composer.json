@@ -1,0 +1,38 @@
+{
+  "name": "pushradar/pushradar-server-php",
+  "description": "PushRadar's official PHP server library.",
+  "keywords": [
+    "pushradar",
+    "realtime",
+    "real-time",
+    "real time",
+    "websockets",
+    "channels",
+    "publish",
+    "messages"
+  ],
+  "homepage": "https://pushradar.com",
+  "authors": [
+    {
+      "name": "PushRadar",
+      "email": "contact@pushradar.com",
+      "homepage": "https://pushradar.com"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^7.0|^8.0",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "PushRadar\\": "src/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
