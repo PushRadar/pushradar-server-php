@@ -82,7 +82,7 @@ class PushRadar
         }
 
         curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-            'X-PushRadar-Library: "pushradar-server-php ' . self::$version . '"'
+            'X-PushRadar-Library: pushradar-server-php ' . self::$version
         ));
 
         curl_setopt($ch, CURLOPT_USERPWD, $this->secretKey . ":");
