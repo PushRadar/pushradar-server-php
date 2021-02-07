@@ -4,7 +4,7 @@ namespace PushRadar;
 
 class PushRadar
 {
-    public static $version = '3.0.0-alpha';
+    public static $version = '3.0.0-alpha.1';
     private $apiEndpoint = 'https://api.pushradar.com/v3';
     private $secretKey = null;
 

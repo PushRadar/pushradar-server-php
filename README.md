@@ -1,7 +1,7 @@
 <p align="center">
-<a href="https://packagist.org/packages/pushradar/pushradar-server-php"><img src="https://poser.pugx.org/pushradar/pushradar-server-php/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/pushradar/pushradar-server-php"><img src="https://poser.pugx.org/pushradar/pushradar-server-php/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/pushradar/pushradar-server-php"><img src="https://poser.pugx.org/pushradar/pushradar-server-php/license.svg" alt="License"></a>
+    <a href="https://packagist.org/packages/pushradar/pushradar-server-php"><img src="https://poser.pugx.org/pushradar/pushradar-server-php/v/stable.svg" alt="Latest Stable Version"></a>
+    <a href="https://packagist.org/packages/pushradar/pushradar-server-php"><img src="https://poser.pugx.org/pushradar/pushradar-server-php/d/total.svg" alt="Total Downloads"></a>
+    <a href="https://packagist.org/packages/pushradar/pushradar-server-php"><img src="https://poser.pugx.org/pushradar/pushradar-server-php/license.svg" alt="License"></a>
 </p>
 
 ## PushRadar PHP Server Library
