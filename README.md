@@ -1,5 +1,3 @@
-<p align="center"><a href="https://pushradar.com" target="_blank"><img src="https://pushradar.com/images/logo/pushradar-logo-dark.svg" width="300"></a></p>
-
 <p align="center">
 <a href="https://packagist.org/packages/pushradar/pushradar-server-php"><img src="https://poser.pugx.org/pushradar/pushradar-php/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/pushradar/pushradar-server-php"><img src="https://poser.pugx.org/pushradar/pushradar-php/d/total.svg" alt="Total Downloads"></a>
@@ -16,8 +14,8 @@ This is PushRadar's official PHP server library.
 
 In order to use this library, please ensure that you have the following:
 
-- PHP 7, PHP 8.
-- A PushRadar account - you can sign up at [pushradar.com](https://pushradar.com).
+- PHP 7, PHP 8
+- A PushRadar account - you can sign up at [pushradar.com](https://pushradar.com)
 - [`curl`](https://secure.php.net/manual/en/book.curl.php) and [`json`](https://secure.php.net/manual/en/book.json.php) extensions enabled
 
 ## Installation
