@@ -63,6 +63,10 @@ Then register your authentication endpoint by calling the `auth(...)` method cli
 radar.auth('/auth');
 ```
 
+## Complete Documentation
+
+Complete documentation for PushRadar's PHP server library can be found at: <https://pushradar.com/docs/3.x?lang=php>
+
 ## License
 
 Copyright 2021, PushRadar. PushRadar's PHP server library is licensed under the MIT license:

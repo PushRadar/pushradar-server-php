@@ -4,7 +4,7 @@ namespace PushRadar;
 
 class PushRadar
 {
-    public static $version = '3.0.0-alpha.1';
+    public static $version = '3.0.0-alpha.2';
     private $apiEndpoint = 'https://api.pushradar.com/v3';
     private $secretKey = null;
 
@@ -106,6 +106,11 @@ class PushRadar
         } else {
             curl_setopt($ch, CURLOPT_POST, 0);
         }
+
+        $certificateBundle = dirname(__FILE__) . '/../ca-bundle.pem';
+        curl_setopt($ch, CURLOPT_CAINFO, $certificateBundle);
+        curl_setopt($ch, CURLOPT_CAPATH, $certificateBundle);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
