@@ -3,14 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="c390050d-7e98-4896-91b5-ae329b807914" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PushRadar.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PushRadar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PushRadarException.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PushRadarException.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -62,6 +63,7 @@
       <updated>1612661974946</updated>
       <workItem from="1612661976099" duration="11880000" />
       <workItem from="1612678818633" duration="153000" />
+      <workItem from="1612715771955" duration="1423000" />
     </task>
     <servers />
   </component>
