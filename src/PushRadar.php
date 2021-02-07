@@ -48,6 +48,10 @@ class PushRadar
 
     public function broadcast($channelName, $data)
     {
+        if (trim($channelName) === '') {
+            throw new PushRadarException('Channel name empty. Please provide a channel name.');
+        }
+
         $this->validateChannelName($channelName);
         $this->validateDataSize($channelName, $data);
 
@@ -65,7 +69,15 @@ class PushRadar
 
     public function auth($channelName)
     {
-        $response = $this->doCURL('GET', $this->apiEndpoint . "/channels/auth", []);
+        if (trim($channelName) === '') {
+            throw new PushRadarException('Channel name empty. Please provide a channel name.');
+        }
+
+        if (substr($channelName, 0, strlen('private-')) !== 'private-') {
+            throw new PushRadarException('Channel authentication can only be used with private channels.');
+        }
+
+        $response = $this->doCURL('GET', $this->apiEndpoint . "/channels/auth?channel=" . urlencode(trim($channelName)), []);
         if ($response['status'] === 200) {
             return json_decode($response['body'])->token;
         }
