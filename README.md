@@ -26,7 +26,7 @@ In order to use this library, please ensure that you have the following:
 The easiest way to get up and running is to install the library using [Composer](http://getcomposer.org/). Run the following command in your console:
 
 ```bash
-composer require pushradar/pushradar-server-php
+$ composer require pushradar/pushradar-server-php
 ```
 
 ## Broadcasting Messages
