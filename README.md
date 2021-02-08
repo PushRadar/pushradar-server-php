@@ -55,7 +55,7 @@ Private channels require authentication and start with the prefix **private-**. 
 You will need to set up an authentication endpoint that returns a token using the `auth(...)` method if the user is allowed to subscribe to the channel. For example:
 
 ```php
-if (/* user can join channel */ true) {
+if (/* is user allowed to access channel? */ true) {
     return json_encode(['token' => $radar->auth($channelName)]);
 }
 ```

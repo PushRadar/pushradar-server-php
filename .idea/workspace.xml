@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c390050d-7e98-4896-91b5-ae329b807914" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ca-bundle.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PushRadar.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PushRadar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +75,8 @@
       <workItem from="1612752165447" duration="19000" />
       <workItem from="1612753194839" duration="82000" />
       <workItem from="1612756501710" duration="163000" />
-      <workItem from="1612756855875" duration="626000" />
+      <workItem from="1612756855875" duration="701000" />
+      <workItem from="1612759248834" duration="74000" />
     </task>
     <servers />
   </component>
