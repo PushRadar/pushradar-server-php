@@ -107,11 +107,6 @@ class PushRadar
             curl_setopt($ch, CURLOPT_POST, 0);
         }
 
-        $certificateBundle = dirname(__FILE__) . '/../ca-bundle.pem';
-        curl_setopt($ch, CURLOPT_CAINFO, $certificateBundle);
-        curl_setopt($ch, CURLOPT_CAPATH, $certificateBundle);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
-
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
         $response = [];

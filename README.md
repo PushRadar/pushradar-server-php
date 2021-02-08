@@ -1,8 +1,11 @@
+<p align="center"><a href="https://pushradar.com" target="_blank"><img src="https://pushradar.com/images/logo/pushradar-logo-dark.svg" width="300"></a></p>
+
 <p align="center">
     <a href="https://packagist.org/packages/pushradar/pushradar-server-php"><img src="https://poser.pugx.org/pushradar/pushradar-server-php/v/stable.svg" alt="Latest Stable Version"></a>
     <a href="https://packagist.org/packages/pushradar/pushradar-server-php"><img src="https://poser.pugx.org/pushradar/pushradar-server-php/d/total.svg" alt="Total Downloads"></a>
     <a href="https://packagist.org/packages/pushradar/pushradar-server-php"><img src="https://poser.pugx.org/pushradar/pushradar-server-php/license.svg" alt="License"></a>
 </p>
+<br />
 
 ## PushRadar PHP Server Library
 
@@ -23,7 +26,7 @@ In order to use this library, please ensure that you have the following:
 The easiest way to get up and running is to install the library using [Composer](http://getcomposer.org/). Run the following command in your console:
 
 ```bash
-composer require pushradar/pushradar-server-php "^3.0"
+composer require pushradar/pushradar-server-php
 ```
 
 ## Broadcasting Messages
