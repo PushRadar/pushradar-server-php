@@ -1,9 +1,9 @@
 <p align="center"><a href="https://pushradar.com" target="_blank"><img src="https://pushradar.com/images/logo/pushradar-logo-dark.svg" width="300"></a></p>
 
 <p align="center">
-    <a href="https://packagist.org/packages/pushradar/pushradar-server-php"><img src="https://poser.pugx.org/pushradar/pushradar-server-php/v/stable.svg" alt="Latest Stable Version"></a>
-    <a href="https://packagist.org/packages/pushradar/pushradar-server-php"><img src="https://poser.pugx.org/pushradar/pushradar-server-php/d/total.svg" alt="Total Downloads"></a>
-    <a href="https://packagist.org/packages/pushradar/pushradar-server-php"><img src="https://poser.pugx.org/pushradar/pushradar-server-php/license.svg" alt="License"></a>
+    <a href="https://packagist.org/packages/pushradar/pushradar-server-php"><img src="https://img.shields.io/packagist/v/pushradar/pushradar-server-php?cacheSeconds=60&color=5b86e5"></a>
+    <a href="https://packagist.org/packages/pushradar/pushradar-server-php"><img src="https://img.shields.io/packagist/dt/pushradar/pushradar-server-php?cacheSeconds=60&color=5b86e5"></a>
+    <a href="https://packagist.org/packages/pushradar/pushradar-server-php"><img src="https://img.shields.io/packagist/l/pushradar/pushradar-server-php?cacheSeconds=60&color=5b86e5"></a>
 </p>
 <br />
 
