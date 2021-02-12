@@ -17,7 +17,7 @@ This is PushRadar's official PHP server library.
 
 In order to use this library, please ensure that you have the following:
 
-- PHP 7, PHP 8
+- PHP 7+, PHP 8
 - A PushRadar account - you can sign up at [pushradar.com](https://pushradar.com)
 - [`curl`](https://secure.php.net/manual/en/book.curl.php) and [`json`](https://secure.php.net/manual/en/book.json.php) extensions enabled
 
@@ -55,8 +55,12 @@ Private channels require authentication and start with the prefix **private-**. 
 You will need to set up an authentication endpoint that returns a token using the `auth(...)` method if the user is allowed to subscribe to the channel. For example:
 
 ```php
+$radar = new \PushRadar\PushRadar('your-secret-key');
+
+$channelName = request()->query('channelName');
+$socketID = request()->query('socketID');
 if (/* is user allowed to access channel? */ true) {
-    return json_encode(['token' => $radar->auth($channelName)]);
+    return json_encode(['token' => $radar->auth($channelName, $socketID)]);
 }
 ```
 
@@ -72,5 +76,5 @@ Complete documentation for PushRadar's PHP server library can be found at: <http
 
 ## License
 
-Copyright 2021, PushRadar. PushRadar's PHP server library is licensed under the MIT license:
-http://www.opensource.org/licenses/mit-license.php
+Copyright © 2021, PushRadar. PushRadar's PHP server library is licensed under the MIT license:
+<https://opensource.org/licenses/mit-license.php>

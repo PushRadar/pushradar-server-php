@@ -2,6 +2,7 @@
 
 [FIXED] Fixed problem regarding cURL SSL verification
 [REMOVED] Removed ca bundle
+[CHANGED] Made channel authentication more secure
 
 ## 3.0.0-alpha.1 (2021-02-07)
 
