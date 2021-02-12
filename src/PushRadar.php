@@ -4,7 +4,7 @@ namespace PushRadar;
 
 class PushRadar
 {
-    public static $version = '3.0.0-alpha.1';
+    public static $version = '3.0.0-alpha.2';
     private $apiEndpoint = 'https://api.pushradar.com/v3';
     private $secretKey = null;
 
@@ -67,7 +67,7 @@ class PushRadar
         }
     }
 
-    public function auth($channelName)
+    public function auth($channelName, $socketID)
     {
         if (trim($channelName) === '') {
             throw new PushRadarException('Channel name empty. Please provide a channel name.');
@@ -77,7 +77,11 @@ class PushRadar
             throw new PushRadarException('Channel authentication can only be used with private channels.');
         }
 
-        $response = $this->doCURL('GET', $this->apiEndpoint . "/channels/auth?channel=" . urlencode(trim($channelName)), []);
+        if (trim($socketID) === '') {
+            throw new PushRadarException('Socket ID empty. Please pass through a socket ID.');
+        }
+
+        $response = $this->doCURL('GET', $this->apiEndpoint . "/channels/auth?channel=" . urlencode(trim($channelName)) . "&socketID=" . urlencode(trim($socketID)), []);
         if ($response['status'] === 200) {
             return json_decode($response['body'])->token;
         }
@@ -93,9 +97,9 @@ class PushRadar
             throw new PushRadarException('Could not initialise cURL.');
         }
 
-        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+        curl_setopt($ch, CURLOPT_HTTPHEADER, [
             'X-PushRadar-Library: pushradar-server-php ' . self::$version
-        ));
+        ]);
 
         curl_setopt($ch, CURLOPT_USERPWD, $this->secretKey . ":");
         curl_setopt($ch, CURLOPT_URL, $url);
