@@ -1,8 +1,6 @@
-## 3.0.0-alpha.2 (2021-02-07)
+## 3.0.0 (2021-02-18)
 
-[FIXED] Fixed problem regarding cURL SSL verification
-[REMOVED] Removed ca bundle
-[CHANGED] Made channel authentication more secure
+[NEW] Updated for release of PushRadar v3
 
 ## 3.0.0-alpha.1 (2021-02-07)
 

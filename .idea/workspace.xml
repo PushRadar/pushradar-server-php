@@ -7,7 +7,7 @@
     <list default="true" id="c390050d-7e98-4896-91b5-ae329b807914" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VERSION" beforeDir="false" afterPath="$PROJECT_DIR$/VERSION" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PushRadar.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PushRadar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,11 +40,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pr-test" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pr-test" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -101,7 +102,15 @@
       <workItem from="1613099059935" duration="12000" />
       <workItem from="1613100388555" duration="7000" />
       <workItem from="1613100567155" duration="1999000" />
-      <workItem from="1613141846989" duration="2337000" />
+      <workItem from="1613141846989" duration="5832000" />
+      <workItem from="1613240418823" duration="4590000" />
+      <workItem from="1613324341042" duration="2039000" />
+      <workItem from="1613395321908" duration="1474000" />
+      <workItem from="1613503702911" duration="4088000" />
+      <workItem from="1613578749835" duration="7887000" />
+      <workItem from="1613623861686" duration="216000" />
+      <workItem from="1613655395625" duration="3697000" />
+      <workItem from="1613689145772" duration="3137000" />
     </task>
     <servers />
   </component>
