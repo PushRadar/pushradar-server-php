@@ -1,8 +1,11 @@
+<p align="center"><a href="https://pushradar.com" target="_blank"><img src="https://pushradar.com/images/logo/pushradar-logo-dark.svg" width="300"></a></p>
+
 <p align="center">
-    <a href="https://packagist.org/packages/pushradar/pushradar-server-php"><img src="https://poser.pugx.org/pushradar/pushradar-server-php/v/stable.svg" alt="Latest Stable Version"></a>
-    <a href="https://packagist.org/packages/pushradar/pushradar-server-php"><img src="https://poser.pugx.org/pushradar/pushradar-server-php/d/total.svg" alt="Total Downloads"></a>
-    <a href="https://packagist.org/packages/pushradar/pushradar-server-php"><img src="https://poser.pugx.org/pushradar/pushradar-server-php/license.svg" alt="License"></a>
+    <a href="https://packagist.org/packages/pushradar/pushradar-server-php"><img src="https://img.shields.io/packagist/v/pushradar/pushradar-server-php?cacheSeconds=60&color=5b86e5"></a>
+    <a href="https://packagist.org/packages/pushradar/pushradar-server-php"><img src="https://img.shields.io/packagist/dt/pushradar/pushradar-server-php?cacheSeconds=60&color=5b86e5"></a>
+    <a href="https://packagist.org/packages/pushradar/pushradar-server-php"><img src="https://img.shields.io/packagist/l/pushradar/pushradar-server-php?cacheSeconds=60&color=5b86e5"></a>
 </p>
+<br />
 
 ## PushRadar PHP Server Library
 
@@ -14,7 +17,7 @@ This is PushRadar's official PHP server library.
 
 In order to use this library, please ensure that you have the following:
 
-- PHP 7, PHP 8
+- PHP 7+, PHP 8
 - A PushRadar account - you can sign up at [pushradar.com](https://pushradar.com)
 - [`curl`](https://secure.php.net/manual/en/book.curl.php) and [`json`](https://secure.php.net/manual/en/book.json.php) extensions enabled
 
@@ -23,7 +26,7 @@ In order to use this library, please ensure that you have the following:
 The easiest way to get up and running is to install the library using [Composer](http://getcomposer.org/). Run the following command in your console:
 
 ```bash
-composer require pushradar/pushradar-server-php "^3.0"
+$ composer require pushradar/pushradar-server-php
 ```
 
 ## Broadcasting Messages
@@ -52,8 +55,12 @@ Private channels require authentication and start with the prefix **private-**. 
 You will need to set up an authentication endpoint that returns a token using the `auth(...)` method if the user is allowed to subscribe to the channel. For example:
 
 ```php
-if (/* user can join channel */ true) {
-    return json_encode(['token' => $radar->auth($channelName)]);
+$radar = new \PushRadar\PushRadar('your-secret-key');
+
+$channelName = request()->query('channelName');
+$socketID = request()->query('socketID');
+if (/* is user allowed to access channel? */ true) {
+    return json_encode(['token' => $radar->auth($channelName, $socketID)]);
 }
 ```
 
@@ -63,7 +70,11 @@ Then register your authentication endpoint by calling the `auth(...)` method cli
 radar.auth('/auth');
 ```
 
+## Complete Documentation
+
+Complete documentation for PushRadar's PHP server library can be found at: <https://pushradar.com/docs/3.x?lang=php>
+
 ## License
 
-Copyright 2021, PushRadar. PushRadar's PHP server library is licensed under the MIT license:
-http://www.opensource.org/licenses/mit-license.php
+Copyright © 2021, PushRadar. PushRadar's PHP server library is licensed under the MIT license:
+<https://opensource.org/licenses/mit-license.php>
