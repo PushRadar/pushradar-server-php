@@ -57,7 +57,7 @@ class PushRadar
 
         $response = $this->doCURL('POST', $this->apiEndpoint . "/broadcasts", [
             "channel" => trim($channelName),
-            "data" => $data
+            "data" => json_encode($data)
         ]);
 
         if ($response['status'] === 200) {

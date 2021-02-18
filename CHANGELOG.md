@@ -1,3 +1,7 @@
+## 3.0.0-alpha.3 (2021-02-17)
+
+[FIXED] Fixed problem regarding incorrect types of data
+
 ## 3.0.0-alpha.2 (2021-02-07)
 
 [FIXED] Fixed problem regarding cURL SSL verification
