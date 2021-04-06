@@ -1,4 +1,4 @@
-## 3.1.0 (2021-04-05)
+## 3.1.1 (2021-04-05)
 
 [NEW] Added support for client data registration
 
