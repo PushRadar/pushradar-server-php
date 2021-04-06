@@ -1,3 +1,7 @@
+## 3.1.0 (2021-04-05)
+
+[NEW] Added support for client data registration
+
 ## 3.0.0 (2021-02-18)
 
 [NEW] Updated for release of PushRadar v3
