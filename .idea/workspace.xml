@@ -7,6 +7,7 @@
     <list default="true" id="c390050d-7e98-4896-91b5-ae329b807914" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VERSION" beforeDir="false" afterPath="$PROJECT_DIR$/VERSION" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PushRadar.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PushRadar.php" afterDir="false" />
     </list>
@@ -41,6 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pr-test" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -110,7 +112,50 @@
       <workItem from="1613578749835" duration="7887000" />
       <workItem from="1613623861686" duration="216000" />
       <workItem from="1613655395625" duration="3697000" />
-      <workItem from="1613689145772" duration="3137000" />
+      <workItem from="1613689145772" duration="3294000" />
+      <workItem from="1613693492680" duration="542000" />
+      <workItem from="1613695558995" duration="10000" />
+      <workItem from="1613698628381" duration="3462000" />
+      <workItem from="1613741662903" duration="16000" />
+      <workItem from="1613746666960" duration="2273000" />
+      <workItem from="1613782512399" duration="3675000" />
+      <workItem from="1613833855179" duration="1873000" />
+      <workItem from="1613927678731" duration="180000" />
+      <workItem from="1613953672995" duration="17000" />
+      <workItem from="1613956049957" duration="365000" />
+      <workItem from="1613956975618" duration="100000" />
+      <workItem from="1613999890202" duration="163000" />
+      <workItem from="1614000071139" duration="1000" />
+      <workItem from="1614069660704" duration="1147000" />
+      <workItem from="1614104617042" duration="596000" />
+      <workItem from="1614194282574" duration="213000" />
+      <workItem from="1614294537735" duration="41000" />
+      <workItem from="1614533265087" duration="98000" />
+      <workItem from="1614606532613" duration="23000" />
+      <workItem from="1614623195137" duration="4000" />
+      <workItem from="1615064189785" duration="8000" />
+      <workItem from="1615142932167" duration="5000" />
+      <workItem from="1615497975382" duration="517000" />
+      <workItem from="1615499304075" duration="52000" />
+      <workItem from="1615571291676" duration="129000" />
+      <workItem from="1615576579903" duration="4000" />
+      <workItem from="1615643554334" duration="125000" />
+      <workItem from="1615644066357" duration="61000" />
+      <workItem from="1615645454660" duration="98000" />
+      <workItem from="1615647387503" duration="48000" />
+      <workItem from="1615724219716" duration="283000" />
+      <workItem from="1615845132894" duration="184000" />
+      <workItem from="1615955735003" duration="77000" />
+      <workItem from="1616184201225" duration="10000" />
+      <workItem from="1617143142073" duration="126000" />
+      <workItem from="1617143277609" duration="7000" />
+      <workItem from="1617199421927" duration="144000" />
+      <workItem from="1617204190008" duration="569000" />
+      <workItem from="1617205413605" duration="940000" />
+      <workItem from="1617373701878" duration="995000" />
+      <workItem from="1617400671752" duration="610000" />
+      <workItem from="1617628695394" duration="5381000" />
+      <workItem from="1617671781611" duration="2141000" />
     </task>
     <servers />
   </component>

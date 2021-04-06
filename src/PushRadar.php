@@ -4,7 +4,7 @@ namespace PushRadar;
 
 class PushRadar
 {
-    public static $version = '3.0.0';
+    public static $version = '3.1.0';
     private $apiEndpoint = 'https://api.pushradar.com/v3';
     private $secretKey = null;
 
@@ -32,9 +32,15 @@ class PushRadar
 
     private function validateDataSize($channelName, $data)
     {
-        $dataSize = (strlen(serialize($data)) + strlen(serialize($channelName))) / 1024;
-        if ($dataSize > 10) {
+        if ((strlen(serialize($data)) + strlen(serialize($channelName))) > (10 * 1024)) {
             throw new PushRadarException('Data size is greater than 10KiB. PushRadar only allows you to broadcast data up to 10KiB in one go.');
+        }
+    }
+
+    private function validateClientDataSize($data)
+    {
+        if (strlen(serialize($data)) > 1024) {
+            throw new PushRadarException('Client data size is greater than 1KiB. PushRadar only accepts client data < 1KiB in size.');
         }
     }
 
@@ -73,8 +79,8 @@ class PushRadar
             throw new PushRadarException('Channel name empty. Please provide a channel name.');
         }
 
-        if (substr($channelName, 0, strlen('private-')) !== 'private-') {
-            throw new PushRadarException('Channel authentication can only be used with private channels.');
+        if (!(substr($channelName, 0, strlen('private-')) === 'private-' || substr($channelName, 0, strlen('presence-')) === 'presence-')) {
+            throw new PushRadarException('Channel authentication can only be used with private and presence channels.');
         }
 
         if (trim($socketID) === '') {
@@ -87,6 +93,26 @@ class PushRadar
         }
 
         throw new PushRadarException('There was a problem receiving a channel authentication token. Server returned: ' . $response['body']);
+    }
+
+    public function registerClientData(string $socketID, $clientData)
+    {
+        if (trim($socketID) === '') {
+            throw new PushRadarException('Socket ID empty. Please pass through a socket ID.');
+        }
+
+        $this->validateClientDataSize($clientData);
+
+        $response = $this->doCURL('POST', $this->apiEndpoint . "/client-data", [
+            "socketID" => $socketID,
+            "clientData" => json_encode($clientData)
+        ]);
+
+        if ($response['status'] === 200) {
+            return true;
+        } else {
+            throw new PushRadarException('An error occurred while calling the API. Server returned: ' . $response['body']);
+        }
     }
 
     private function doCURL($method, $url, $data)
